@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Remodal's necessary styles
+   ========================================================================== */
+
+/* Hide scroll bar */
+
+html.remodal-is-locked {
+  overflow: hidden;
+
+  touch-action: none;
+}
+
+/* Anti FOUC */
+
+.remodal,
+[data-remodal-id] {
+  display: none;
+}
+
+/* Necessary styles of the overlay */
+
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+
+  display: none;
+}
+
+/* Necessary styles of the wrapper */
+
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+  overflow: auto;
+
+  text-align: center;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.remodal-wrapper:after {
+  display: inline-block;
+
+  height: 100%;
+  margin-left: -0.05em;
+
+  content: "";
+}
+
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay,
+.remodal-wrapper {
+  backface-visibility: hidden;
+}
+
+/* Necessary styles of the modal dialog */
+
+.remodal {
+  position: relative;
+
+  outline: none;
+
+  text-size-adjust: 100%;
+	font-family:"Helvetica Neue",Arial,sans-serif, "游ゴシック", YuGothic, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif!important; 
+}
+
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: inline-block;
+}
+.remodal .photo_area img {
+	width: 100%;
+	height: auto;
+}
+.remodal .item_list {
+	display: inline-block;
+}
+.remodal .item_list dl{
+     width: 70%; 
+    display: inline-block;
+    margin: 20px 0 0 0;}
+.remodal .item_list dl dt img{
+	width: 100%;
+	height: auto;
+}
+.remodal .item_list dl dt img:hover{
+	opacity: 0.7;
+}
+.remodal .item_list dl dd a {
+width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+	.remodal .item_list dl dd .btn_more {
+margin: 10px auto 0;
+    padding: 5px 0;
+    width: 100px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    display: block;
+    border: 1px solid #000;
+	font-weight: 300;
+}
+@media only screen and (min-width : 768px ){
+.remodal .item_list dl{
+     width: 49.6%; 
+	}
+	}
