@@ -1,0 +1,251 @@
+<!doctype html>
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="YUMI KANAMARU"/>
+<meta property="og:description" content="金丸由美ポートフォリオサイト" />
+<meta property="og:image" content="img/logo_ogp.png" />
+<meta property="og:url" content="https://yumikanamaru.com" />
+<meta property="og:site_name" content="YUMI KANAMARU"/>
+<title>YUMI KANAMARU</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/meanmenu.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.meanmenu.js"></script>
+<script type="text/javascript" src="js/jquery.inview.js"></script>
+<script type="text/javascript" src="js/simpleParallax.js"></script>
+<script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
+<meta name="robots" content="noindex, nofollow">
+<script>
+$(document).ready(function() {
+$('body').hide().fadeIn(2500);
+});
+</script>
+<script>
+	jQuery(document).ready(function () {
+	    jQuery('nav').meanmenu();
+	});
+</script>
+<script>
+	jQuery(document).ready(function () {
+$('.move_right').simpleParallax({scale: '1.50', orientation: 'right'});
+$('.move_left').simpleParallax({scale: '1.50', orientation: 'left'});
+$('.move_down').simpleParallax({scale: '1.50', orientation: 'down'});
+$('.move_up').simpleParallax({scale: '1.50', orientation: 'up'});    });
+</script>
+<script>
+$(function() {
+ $('.pdf_img').on('inview', function(event, isInView) {
+    if (isInView) {
+    //表示領域に入った時
+      $(this).addClass('rotateInDownLeft');
+    } else {
+    //表示領域から出た時
+      $(this).removeClass('rotateInDownLeft');
+      $(this).css('opacity',0); //非表示にしておく
+    }
+  });
+ $('.sec_title').on('inview', function(event, isInView) {
+    if (isInView) {
+    //表示領域に入った時
+      $(this).addClass('fadeInDown');
+    } else {
+    //表示領域から出た時
+      $(this).removeClass('fadeInDown');
+      $(this).css('opacity',0); //非表示にしておく
+    }
+  });
+});
+</script>
+<script>
+$(document).ready(function() {
+ $('a').smoothScroll({
+    speed: 1000
+  });
+   });
+</script>    </head>
+
+<body class="top_page">
+<header class="top_logo">
+<nav class="g_nav">
+  <ul class="cf">
+    <li><a href="#top_photo_area">WORKS</a>
+    </li>
+    
+    <li><a href="#pdf">PDF</a></li>
+    <li><a href="#about">ABOUT ME</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+<div id="first_img">
+</div>
+</header>
+<div id="content">
+  <div id="top_photo_area"　class="slide-bottom">
+    <main>
+        <h1 class="textEffect"><span>WORKS</span></h1>
+      <!--1写真始まり-->
+  <div class="photo_box first"> 
+    <div class="top_photo"><img src="img/azuki.png" width="750" height="551" alt="" class="move_right"/></div>
+  <div class="top_title la_en">
+     LOGO</div>
+    <div class="top_text">全て自主制作で、ロゴを作成しました。ロゴの作成を通じて、コンセプトをビジュアル化する力を養いたいと考えました。</div>
+    <a href="logo/logo.html"><div class="button_box text_orange">VIEW</div></a>
+  </div>
+      
+      <!--1写真終わり-->
+      <!--2写真始まり-->
+  <div class="photo_box second"> 
+    <div class="top_photo"><img src="img/hyoshi.jpg" width="718" height="947" alt="" class="move_up"/></div>
+    <div class="top_title la_en">
+    Needlework Marble</div>
+    <div class="top_text">「Needlework Marble」という名前で制作をなさっている、手芸家の大西さまのWebサイトなどを作成しました。</div>
+    <a href="needlework_marble/needlework_marble.html"><div class="button_box text_orange">VIEW</div></a>
+    
+  </div>
+      <!--2写真終わり-->
+      <!--3写真始まり-->
+  <div class="photo_box third">
+    <div class="top_photo"><img src="img/picnic_logo.png" width="750" height="817" alt="" class="move_down"/></div>
+    <div class="top_title">
+  <!--    <span class="number">03</span>
+-->    ぴくにっく<br class="none">じゅーす</div>
+    <div class="top_text">架空のフルーツジュースの店をオープンさせるという設定で、店のプランニングとツール制作を行いました。</div>
+    <a href="picnic_juice/picnic_juice.html"><div class="button_box text_orange">VIEW</div></a>
+  </div>
+      <!--3写真終わり-->
+      <!--4写真始まり-->
+  <div class="photo_box forth">
+    <div class="top_photo"><img src="img/graphic.png" width="895" height="1174" alt="" class="move_left"/></div>
+    <div class="top_title">
+  <!--    <span class="number">04</span>-->
+      GRAPHIC WORKS</div>
+    <div class="top_text">名刺やリーフレットなどを作成しました。</div>
+      <a href="graphic_works/graphic_works.html"><div class="button_box">VIEW</div></a>
+  </div>
+     <!--4写真終わり-->                 </main>
+  </div>
+  <div id="pdf">
+    <h1 class="textEffect"><span>PDF</span></h1>
+    <div id="pdf_desc">
+      <div class="pdf_img animated"> <img src="img/pdf.png" width="842" height="595" alt=""/> 
+      </div>
+      <p>ポートフォリオの冊子のPDFです。制作物についてより詳しく説明しています。ぜひご覧ください。</p>
+      <a href="pdf/portfolio_kanamaruyumi.pdf"><div class="button_box">VIEW</div></a>
+    </div>
+  </div>
+  <div id="about">
+    <h1 class="textEffect"><span>ABOUT ME</span></h1>
+    <div id="intro">
+      <p class="name">金丸由美／YUMI KANAMARU</p>
+      <p class="job">Graphic／Web Designer</p>
+    </div>
+    <section id="biography" class="cf">
+      <h1 class="sec_title animated">HISTORY</h1>
+      <div id="b_list">
+        <table>
+          <tbody>
+            <tr>
+              <th>1990.06</th>
+              <td>香川県に生まれる</td>
+            </tr>
+            <tr>
+              <th>2013.03</th>
+              <td>東京外国語大学外国語学部ポルトガル語学科卒業</td>
+            </tr>
+            <tr>
+              <th>2013.04</th>
+              <td>イオンリテール株式会社入社<br>
+                化粧品売り場で勤務</td>
+            </tr>
+            <tr>
+              <th>2016.10</th>
+              <td>同社退社</td>
+            </tr>
+            <tr>
+              <th>2016.10</th>
+              <td>東京デザインプレックス研究所入学<br>
+                グラフィックデザインとWebデザイン、Webマーケティングを学ぶ</td>
+            </tr>
+            <tr>
+              <th>2017.03</th>
+              <td>同校修了<br>
+              修了後は、アルバイトで生計を立てながらポートフォリオの制作とクライアントワークを行っている。<br>●クライアントワーク●
+<br>手芸家 大西さま：Webサイト、カレンダー、レシピ<br>
+美容師 松田さま：名刺</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="skill">
+      <h1 class="sec_title animated">SKILLS</h1>
+      <p>グラフィックデザイン制作</p>
+      <p>HTMLとCSS、jQueryによるWebサイト制作</p>
+      <p>&nbsp;</p>
+      <p>Adobe Illustrator CC</p>
+      <p>Adobe Photoshop CC</p>
+      <p>Adobe Dreamweaver CC</p>
+      <p>Adobe Indesign CC</p>
+      <p>Sketch</p>
+      <p>Word/Excel/Power Point</p>
+    </section>
+    <section id="certificate" class="clearboth cf">
+      <h1 class="sec_title animated">CERTIFICATE</h1>
+  <div id="c_list">
+    <table>
+      <tbody>
+        <tr>
+          <th>2015.01</th>
+          <td>日本化粧品検定2級合格</td>
+          </tr>
+        <tr>
+          <th>2016.11</th>
+          <td>基本情報技術者試験合格</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  </section>
+  </div>
+  <div id="contact">
+    <h1 class="textEffect"><span>CONTACT</span></h1>
+    <div class="contact_desc">
+      <p>メールはこちらよりお願い致します。</p>  
+      <a href="mailto:yumi.kanamaru64@gmail.com"><div class="button_box">SEND MAIL</div></a>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer_inner">
+  <div id="footer_nav" class="cf">
+    <div class="left">
+      
+      <a href="#top_photo_area"><p>WORKS</p></a>
+      <ul class="cf">
+        <li><a href="logo/logo.html">LOGO</a></li>
+        <li><a href="needlework_marble/needlework_marble.html">Needlework Marble</a></li>
+        <li><a href="picnic_juice/picnic_juice.html">ぴくにっくじゅーす</a></li>
+        <li><a href="graphic_works/graphic_works.html">GRAPHIC WORKS</a></li>
+        </ul>
+      
+      </div>
+    <div class="right">
+      <a href="#pdf">
+        <p>PDF</p>
+        </a>
+      <a href="#about"><p>ABOUT ME
+        </p></a>
+      <a href="#contact">
+        <p>CONTACT</p></a>
+      
+      </div>
+  </div>
+  <p class="copyright">ALL RIGHTS RESERVED YUMI KANAMARU &copy;2017</p>
+  </div>
+</footer>
+</body>
+</html>
