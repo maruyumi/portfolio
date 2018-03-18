@@ -18,7 +18,7 @@ html {
 }
 body {
 	color: #fff;
-	font-family: 'Montserrat', Arial, sans-serif, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif!important;
+	font-family: "bicyclette", Arial, sans-serif, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif!important;
 	font-size: 0.8em;
 	line-height: 1.5;
 }
@@ -157,7 +157,7 @@ main .top_title, .sec_title, .desc_area h1 {
 	line-height: 1.2;
 }
 .sec_title, .la_en, main .top_title {
-	font-weight: 700;
+	font-weight: 900;
 }
 main .top_title {
 	margin: 0.5em 0 0.1em;
