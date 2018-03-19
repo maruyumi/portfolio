@@ -1,0 +1,418 @@
+
+<!doctype html>
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOGO | YUMI KANAMARU</title>
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/meanmenu.css" rel="stylesheet" type="text/css">
+<link href="../css/drawer.css" rel="stylesheet" type="text/css">
+<link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link href="../css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/masonry.pkgd.js"></script>
+<script type="text/javascript" src="../js/imagesloaded.js"></script>
+<script type="text/javascript" src="../js/jquery.infinitescroll.js"></script>
+<script type="text/javascript" src="../js/jquery.meanmenu.js"></script>
+<script type="text/javascript" src="../js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="../js/parallax.min.js"></script>
+<meta name="robots" content="noindex, nofollow">
+<script>
+  $(function(){
+        var $container = $('#ma_photo_area');
+        $container.imagesLoaded(function(){
+          $container.masonry({
+            itemSelector: '.box',
+            isFitWidth: false,
+            isAnimated: true,
+            isResizable: true,
+          });
+        });
+
+        $container.infinitescroll({
+          navSelector  : '.navigation',
+          nextSelector : '.navigation a',
+          itemSelector : '#ma_photo_area .box',
+       animate:false,
+          extraScrollPx: -200,	
+		  maxPage:4,
+         loading: {
+            finishedMsg: 'これ以前の記事はありません',
+          }
+        },
+
+      // trigger Masonry as a callback
+        function( newElements ) {
+          var $newElems = $( newElements );
+          $newElems.imagesLoaded(function(){
+            $container.masonry( 'appended', $newElems, true ); 
+          });
+         $(".navigation").insertAfter("#ma_photo_area").delay(300).fadeIn(600);
+        });
+        $('#ma_photo_area').infinitescroll('unbind'); // 初期化
+        $(".navigation a").click(function(){
+          $('#ma_photo_area').infinitescroll('retrieve');
+          return false;
+        });
+ });
+
+    </script>
+<script>
+	jQuery(document).ready(function () {
+	    jQuery('nav').meanmenu();
+	});
+</script>
+<script>
+$(document).ready(function() {
+	$('[data-fancybox]').fancybox();
+});
+</script>
+<script>
+$(document).ready(function() {
+$('body').hide().fadeIn(2500);
+});
+</script>
+ 
+  </head>
+
+<body class="logo">
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/logo_top.jpg"></div>
+<!--<div id="top_main" class="works">
+</div>
+-->
+<nav class="g_nav">
+  <ul class="cf">
+    <li><a href="../index.html#top_photo_area">WORKS</a></li>
+       <li><a href="../index.html#pdf">PDF</a></li>      
+    <li><a href="../index.html#about">ABOUT ME</a></li>
+    <li><a href="../index.html#contact">CONTACT</a></li>
+  </ul>
+</nav>
+<div id="content" class="works_detail masonly">
+<div class="works_intro">
+  <h1 class="page_title">LOGO</h1>
+<p>全て自主制作で、ロゴを作成しました。ロゴの作成を通じて、コンセプトをビジュアル化する力を養いたいと考えました。
+</p></div>
+                              <div id="ma_photo_area">
+<!--1列に4個はじまり-->       
+ <div class="box">
+<a href="img/azuki.png" data-fancybox="logo" data-caption="あずきや安堂：調布市にある今川焼き屋。店で手作りされているこだわりのあずきをロゴに取り入れた。地元の人に愛される優しい雰囲気のお店でありながら、イベントへの参加など新しいことにも取り組んでいる店なので、ポップなロゴにした。
+">
+<img src="img/azuki.png" alt="logo" /></a>
+</div>
+        <div class="box">
+<a href="img/wpunch.png" data-fancybox="logo" data-caption="Wパンチ：調布市にある居酒屋。コンセプトは、「一人でも気軽に飲める立ち飲み店」。店名の「Wパンチ」は、パンチパーマのコンビが切り盛りする、パンチの効いたメニューと価格の店にという想いから名付けられた。ロゴは、勢いの良さを表しつつ、一見さんも入りやすい親しみのある雰囲気を表したいと考えた。
+">
+<img src="img/wpunch.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/idumi.png" data-fancybox="logo" data-caption="いづみの森：調布市にあるケーキ屋。店のコンセプトは、「森の中にたたずむ小さな暖かみのあるケーキ屋さんとして、お客様に笑顔をご提供致します」。木の幹にケーキ屋さんがあるようなイメージでロゴを作成した。丸い部分は、ホールのケーキから1切れ取ったイメージも重ね、「近所の人が1つケーキを買いに頻繁に寄る」というお店の様子を表した。">
+<img src="img/idumi.png" alt="calendar2018" /></a>
+</div>
+        <div class="box right">
+<a href="img/SWEET-GRAMS.png" data-fancybox="logo" data-caption="SWEET GRAMS：名古屋市にある自分で好きなトッピングができるフローズンヨーグルトの店。1g＝3円の量り売りシステムであることが名前の由来。文字を山なりにし、山なりになったフローズンヨーグルトに自分で好きなトッピングをのせるという特徴を表した。若い女性客が多いので、可愛らしさのあるフォントにした。フルーツの新鮮さやコーヒー豆にこだわりがあるので、特別感を表したいと考え、セリフ体を選んだ。">
+<img src="img/SWEET-GRAMS.png" alt="calendar2018" /></a>
+</div>
+<!--1列に4個終わり-->    
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/kitchen.png" data-fancybox="logo" data-caption="36.5℃ kitchen：代々木上原にある、フレンチのビストロ。36.5℃は、「やや微熱のあるようなあたたかいハートをもって、肩の力を抜いて美味しい料理を堪能していただきたい」という願いを込めてつけられた。文字を結ぶ線で、熱でとろける感じとリラックスできる雰囲気、料理を食べた後も微熱は冷めずに続いていく様子を表現した。
+">
+<img src="img/kitchen.png" alt="calendar2018" /></a>
+</div>
+        <div class="box x2 right"> 
+<a href="img/la_pesquera.png" data-fancybox="logo" data-caption="La Pesquera-MARISQUERIA-：大手町にある、スペイン風魚介料理の店。近くで働くサラリーマンをターゲットとし、ロゴを作成した。Pesqueraは「漁師風」MARISQUERIAは「スペイン魚介食堂」という意味なので、うねりがあるフォントで波のうねりを表した。店内の活気があり、カジュアルな雰囲気を表したいと考えた。
+">
+<img src="img/la_pesquera.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり-->    
+<!--1列に4個はじまり-->       
+ <div class="box">
+<a href="img/chouchou.png" data-fancybox="logo" data-caption="Bistro ChouChou：岐阜県各務原市の山道を入ったところにあるビストロ。古い民家を改装した一軒家で、まさに隠れ家ビストロだが、初めて行く人でもリラックスできる雰囲気の店。ロゴは、お店の優しい雰囲気とレトロな店内を表したいと考えた。
+">
+<img src="img/chouchou.png" alt="logo" /></a>
+</div>
+        <div class="box">
+<a href="img/ikkaku.png" data-fancybox="logo" data-caption="一鶴：香川県丸亀市に本店がある、骨付鳥の店。男性が仕事帰りに同僚と行く店というイメージでロゴを作成した。
+">
+<img src="img/ikkaku.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/tokiwa1921.png" data-fancybox="logo" data-caption="トキワ1921：岐阜県関市にあるオムライスが評判の洋食屋。素朴でレトロな雰囲気の店。「9」に卵の形をさりげなくいれた。">
+<img src="img/tokiwa1921.png" alt="calendar2018" /></a>
+</div>
+        <div class="box right">
+<a href="img/HAUTE.png" data-fancybox="logo" data-caption="HAUTE：結婚式やパーティ用のドレスをレンタル、購入できる店。「HAUTE」はフランス語で「高級な」という意味で、海外でセレクトしたドレスを取り扱っている。リボンを用い、結婚式などの「縁が結ばれる場」に着ていくドレスを扱っているということを表した。また、HAUTEのドレスを着たお客さまが、「そのドレス素敵」と言われ、それをきっかけに新たな縁が結ばれて欲しいという想いも込めた。
+">
+<img src="img/HAUTE.png" alt="calendar2018" /></a>
+</div>
+<!--1列に4個終わり-->    
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/meiho_gelato.png" data-fancybox="logo" data-caption="明宝ジェラート：岐阜県郡上市に本店がある、ジェラートの店。飛騨牛の牛乳や郡上の水を使っている点が特徴である。「M」の文字で、郡上の山を表した。また、ディスプレイされている時のジェラートのうねりを文字で表した。素朴で親しみのあるフォントを選んだ。
+">
+<img src="img/meiho_gelato.png" alt="calendar2018" /></a>
+</div>
+        <div class="box x2 right"> 
+<a href="img/asian-tea.png" data-fancybox="logo" data-caption="asian tea house：名鉄岐阜駅の前にある、ティースタンド。厳選したアジアの茶葉を使ったドリンクをテイクアウトで販売している。利用客のinstagramの投稿をみると、気分転換や自分へのご褒美として購入されていることが分かった。お客さまにドリンクを飲んで、リラックスしてほしいと考え、アジアを代表する癒し系の動物であるパンダをロゴに取り入れた。">
+<img src="img/asian-tea.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり-->    
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/MORIMOTO-KOBO.png" data-fancybox="logo" data-caption="森本工房：岐阜県揖斐郡にある手作りのハム、ソーセージ工房。ドイツで修行をした職人が、素材である豚にこだわってハムやソーセージを作っている。ロゴは、商品がお中元やお歳暮などのギフトとしても販売されているため、カジュアルになり過ぎないように意識した。また、丁寧に手作りされていることと、商品が安心・安全であることが伝わるようなロゴにしたいと考えた。
+">
+<img src="img/MORIMOTO-KOBO.png" alt="calendar2018" /></a>
+</div>
+        <div class="box x2 right"> 
+<a href="img/organkimono.png" data-fancybox="logo" data-caption="ORGANキモノ：岐阜県川原町にあるアンティーク着物の着付けとレンタルの店。レンタルした着物を着て、周辺の古い日本家屋が並ぶ町並みを散策することができる。取り扱っている着物に合わせて、アールデコ風のレトロなフォントを使った。鵜飼で有名な長良川の近くにあるお店なので、文字の一部に曲線を取り入れ、川の流れを表現した。
+">
+<img src="img/organkimono.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり--> 
+<!--1列に4個はじまり-->       
+ <div class="box">
+<a href="img/tukine.png" data-fancybox="logo" data-caption="月音：武蔵野市にある美容室。店名は、「月が毎晩形を変化させるように、お客様がヘアスタイルを変化させる場所。居心地のいい音と笑顔溢れるお店を目指します」という想いから名付けられた。曲線で店内のリラックスできる雰囲気と万物が変化していく時の流れを表した。
+">
+<img src="img/tukine.png" alt="logo" /></a>
+</div>
+        <div class="box">
+<a href="img/anzie.png" data-fancybox="logo" data-caption="Anzie：表参道にある美容室。店名は天使をイメージするニックネームのAngieとA to Z（あらゆるもの）を組み合わせた造語で、「あらゆる女性が天使のように変われる美容室」「スタッフが天使のようにお客様を幸せにする美容室」という想いが込められている。天使というキーワードと店内の雰囲気に合わせた、優しく開放的な雰囲気のロゴにした。
+">
+<img src="img/anzie.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/Deskmystyle.png" data-fancybox="logo" data-caption="Desk my Style：二子玉ライズなどにある雑貨屋。働く人のデスク周りをもっとオシャレに、快適にするセレクトショップというコンセプト。取り扱っているアイテムは、日常を楽しくしてくれるようなキャラクターや動物のグッズから品のあるギフト向けのものまであるため、ロゴは、エネルギッシュかつ上品な雰囲気になるようにした。文字に丸みをつける処理をしたが、「m」などの下部は直線のままにし、「デスク周りに置かれているもの」を表現した。
+">
+<img src="img/Deskmystyle.png" alt="calendar2018" /></a>
+</div>
+        <div class="box right">
+<a href="img/campick.png" data-fancybox="logo" data-caption="Campick STAND&FACTORY：調布市にあるアウトドア雑貨の販売とカフェ＆バーの営業をしている店。「普段使いのアウトドアツールは、毎日に遊び心を与えてくれる」との考えに基づき、毎日の生活の中で使えるイン＆アウトドアなキッチンツール等を販売している。ロゴマークは、テントと家の屋根を2つの三角形で表し、イン＆アウトドアのものを取り扱っているということを表した。2つの三角形を山の連なりのように見えるようにし、アウトドアと関連付けた。
+">
+<img src="img/campick.png" alt="calendar2018" /></a>
+</div>
+<!--1列に4個終わり-->
+<!--1列に4個はじまり-->       
+ <div class="box">
+<a href="img/tsugaru.jpg" data-fancybox="logo" data-caption="津軽びいどろ：青森県の職人によってつくられているガラスのブランド。青森の四季折々の自然をモチーフにしたデザインが特徴である。「宙吹き」という技法でつくられている途中のガラスの形と、青森県とつながりの深いリンゴを用いたロゴにした。商品は、「本物が分かる大人が使う」という雰囲気があるので、その雰囲気に合わせたロゴにした。
+">
+<img src="img/tsugaru.jpg" alt="logo" /></a>
+</div>
+        <div class="box">
+<a href="img/ishiki.png" data-fancybox="logo" data-caption="一色ちりめん：京都の丹後ちりめん織元である、一色テキスタイルによる、気軽に日常使いができる丹後ちりめんのアイテムのブランド。一色テキスタイルの特徴が、絹だけにこだわらず時代、用途にマッチングした原糸を使用し、洗えるちりめんの商品などをつくっている点であるので、「新しさ」をキーワードに、直線と円で文字をつくった。
+">
+<img src="img/ishiki.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/Hanatable.png" data-fancybox="logo" data-caption="Hana table：5枚の板を組み木の技術を使い、ねじ無しで自立させたテーブル。日本の技術を使った、世界ブランドを目指している商品であるという特徴を踏まえ、家紋風のロゴマークにした。また、自立するように緻密に形づくられた商品であることを表したいと考え、細くてシンプルなロゴタイプにした。色は、商品の色に近く、かつ和風なイメージの色にした。
+">
+<img src="img/Hanatable.png" alt="calendar2018" /></a>
+</div>
+        <div class="box right">
+<a href="img/rui_textile.png" data-fancybox="logo" data-caption="rui_textile：素材からオリジナルのフェルトやレースをつくり、それを使ったストールなどを制作しているテキスタイル作家のruiさんのブランド。「r」から伸びている曲線で、作品が持つ優しい雰囲気を表したいと考えた。また、ruiさんは、「私がものづくりするにあたり、大事にしていることは家族、知人、工場のみなさまrui_textileに関わって下さっているみなさんが豊かになるためにつづけているということ」という考えをお持ちなので、ブランドが周りの方と豊かさとを繋ぐ架け橋になるようにとの想いも曲線の部分に込めた。
+">
+<img src="img/rui_textile.png" alt="calendar2018" /></a>
+</div>
+<!--1列に4個終わり-->    
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/blue-candle.png" data-fancybox="logo" data-caption="Blue Candle：ハンドメイドのキャンドルのブランド。作品は、シックなものからファンシーなものまで様々な雰囲気のものがあるので、どの作品とも相性が良さそうなフォントを選んだ。
+">
+<img src="img/blue-candle.png" alt="calendar2018" /></a>
+</div>
+        <div class="box x2 right"> 
+<a href="img/horizon.png" data-fancybox="logo" data-caption="horizon：飲み物を入れることで、絵の空の色が変えられるグラスのシリーズ。吹きガラス職人の方が手作りで制作されているので、手作りのあたたかさが伝わるようなロゴにした。地平線に家やラクダなどの絵があるという特徴を表した。
+">
+<img src="img/horizon.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり-->  
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/polar-ice.png" data-fancybox="logo" data-caption="POLAR ICE：しろくまとペンギンの形の氷をつくることができる製氷器。家に友人を招いてもてなすことがある女性をターゲットとし、ロゴを作成した。特別感のあるデザインにした。
+">
+<img src="img/polar-ice.png" alt="calendar2018" /></a>
+        </div>
+        <div class="box x2 right"> 
+<a href="img/REAL-FAKE.png" data-fancybox="logo" data-caption="REAL FAKE：リアルな動物の毛並みが印刷された紙を使った、折り紙などのシリーズ。父親をターゲットとし、子どものために父親が折り紙を買ってつくるというシチュエーションを増やしたいと考え、ロゴを作成した。折り紙を折ったような文字にした。色は、このシリーズの動物の毛並みの色に多い、黒と茶を使った。
+">
+<img src="img/REAL-FAKE.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり-->    
+<!--1列に4個はじまり-->       
+ <div class="box">
+<a href="img/tail.png" data-fancybox="logo" data-caption="Tail：傘に動物のモチーフがくっついていて、尻尾が傘のバンドになっている。かわいい雑貨を好きな女性をターゲットとし、ロゴを作成した。
+">
+<img src="img/tail.png" alt="logo" /></a>
+</div>
+        <div class="box">
+<a href="img/ALOLINA.png" data-fancybox="logo" data-caption="ALOLINA：フランスとアメリカをイメージしたポーチなどの旅行に使えるアイテムのブランド。ブランド名には、「旅をすることで幸せな気持ちになり、家族や周りの人たち、出会った人との幸せの輪を広げていって欲しい」という思いが込められている。ブランド名の由来にある「幸せの輪」を「O」の文字で表した。上品さと可愛らしさを兼ね備えたフォントにした。
+">
+<img src="img/ALOLINA.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/airkaol.png" data-fancybox="logo" data-caption="Air kaol：吸水性に優れ、何度洗ってもふわふわ感が続くタオルのブランド。独自の撚糸の技術によって、糸の中に空気をたくさん含んだ空間ができているためこのような特徴のタオルになっている。「i」と「o」の部分で、糸の中に空気を含んでいることを表した。ふわふわのタオルを使う幸せを感じてほしいと考え、優しい雰囲気のフォントにした。
+">
+<img src="img/airkaol.png" alt="calendar2018" /></a>
+</div>
+        <div class="box right">
+<a href="img/nidonen.png" data-fancybox="logo" data-caption="ニドネン：二度寝を防ぐ目覚ましマット。マットを両足で約5秒間踏まないとアラームが止まらない仕組みになっている。直線で文字を作り、角をとがらせることで、スッキリ起きられることと、「二度寝をしない」と思う人の決意、勢いを表した。一方で、商品の白くて柔らかいという見た目ともロゴの雰囲気が離れすぎないように意識した。
+">
+<img src="img/nidonen.png" alt="calendar2018" /></a>
+</div>
+<!--1列に4個終わり-->    
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/tsuyoiko.png" data-fancybox="logo" data-caption="つよいこグラス：幼児用のガラスコップ。通常のガラスコップに比べて割れにくいという特徴がある。ある保育士さんの、「毎日の生活の中で、小さな手や唇が本物に触れることで心が豊かに育まれる、そんな食器を選んでいただきたい」という想いがきっかけとなり、つくられた。ロゴは、白抜きの文字にし、ガラスの透明感を表した。">
+<img src="img/tsuyoiko.png" alt="calendar2018" /></a>
+</div>
+        <div class="box x2 right"> 
+<a href="img/maruhi.png" data-fancybox="logo" data-caption="MARUHI CUP&SAUCER：カップを持ち上げた下のスペースに、小さなお菓子などを入れることができる、カップとソーサー。カップの底の部分に17mm、ソーサーに16mmのくぼみがあり、両方のくぼみを使って、いろいろなものを置ける。「サプライズ」とカップのデザインから感じた「温かさ」をキーワードにロゴを作成した。「U」の文字で、ソーサーのくぼみを表した。
+">
+<img src="img/maruhi.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり-->    
+<!--1列に4個はじまり-->       
+ <div class="box">
+<a href="img/iDresser.png" data-fancybox="logo" data-caption="iDresser：鏡付きのスマホケース。メイクの画像や動画をスマホで見ながらメイクをすることができる。鏡付きであることを表すため、「s」を鏡に映ったように反転させ、また、ハート型にも見えるようにした。
+">
+<img src="img/iDresser.png" alt="logo" /></a>
+</div>
+        <div class="box">
+<a href="img/Flip-Box.png" data-fancybox="logo" data-caption="Flip-Box：折りたたみ式のクーラーボックス。アウトドアやスポーツを楽しむ男性をターゲットとし、ロゴを作成した。文字を白抜きにし、折りたためて場所をとらないことを表した。文字の黒と白の境界線を斜めにすることで、活動的なシーンに使えるものだということを表現した。
+">
+<img src="img/Flip-Box.png" alt="calendar2018" /></a>
+</div>
+        <div class="box right">
+<a href="img/jikky.png" data-fancybox="logo" data-caption="JIKKY：磁気式のメモボード。専用のペンを使って書いたり消したりできる。子どものお絵描きに使うという需要があるので、小さい子どもがいる母親をターゲットとし、ロゴを作成した。文字をつなぐ線で、自由にお絵描きができるものであることを表した。
+">
+<img src="img/jikky.png" alt="calendar2018" /></a>
+</div>
+ <div class="box">
+<a href="img/pokeful.png" data-fancybox="logo" data-caption="Pokeful：大小2つのポケットが付いたクリアファイル。「o」の文字で、ふた付きのポケットを表した。この商品を使って、楽しく仕事をしてほしいと考え、動きのある文字にした。">
+<img src="img/pokeful.png" alt="logo" /></a>
+</div>
+<!--1列に4個終わり-->    
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/CHACOLI.png" data-fancybox="logo" data-caption="CHACOLI：カバンのブランド。シンプルな見た目で、構造や縫製に徹底してこだわってつくられている。「建築の骨組みのように考え抜かれた複雑な構造とそれを実現させる高度な縫製技術」と紹介されるほどである。商品は、「男っぽい顔つきのデザインだが、緻密な造りなので、エレガントなファッションにも似合う」という特徴がある。フォントはDINを選び、シンプルな見た目や計算され尽くした構造、品のある佇まいを表したいと考えた。">
+<img src="img/CHACOLI.png" alt="calendar2018" /></a>
+</div>
+        <div class="box x2 right"> 
+<a href="img/butterflyboard.png" data-fancybox="logo" data-caption="BUTTERFLY BOARD：A4サイズの持ち運びできるホワイトボード。高機能で、シンプルという商品の特徴に合う、癖のないフォントを選んだ。ロゴマークは、ピクトグラム風に作成した。
+">
+<img src="img/butterflyboard.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり-->    
+<!--1列に4個はじまり-->       
+        <div class="box">
+<a href="img/recipe.png" data-fancybox="logo" data-caption="レシピマス：1人分の材料をすり切り１杯で量れる枡セット。例えば「ベーグル枡」は、強力粉・水・砂糖など５種類の材料をそれぞれの枡にすり切り入れるだけでベーグル1個分の分量が量れる。「簡単」「楽しい」をキーワードにロゴを作成した。90度と45度の直線を使った文字で、枡を使ってきっちり計れることを表現した">
+<img src="img/recipe.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/excellence.png" data-fancybox="logo" data-caption="excellence BEAUTY：カネボウから発売されている、ストッキング。ファンデーションでメイクを施したかのように脚を綺麗に見せる点がセールスポイント。ターゲットを、お洒落にこだわりがある30〜40代の働く女性とし、「上質」「優美」をキーワードにロゴを作成した。「excellence」の文字は、直線と正円を使って作成した。仕事の戦闘服の一部となってほしい、このストッキングを履くことで気分を上向きにしてほしいと考え、右上がりにした。
+">
+<img src="img/excellence.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/oisesan.png" data-fancybox="logo" data-caption="oisesan：伊勢木綿を使用したシャツブランド。伊勢木綿は、江戸時代からつくられている伝統ある織布である。伊勢木綿を使った手ぬぐいなどをつくっている常若屋によって販売されている。常若屋は、伊勢の夫婦岩で有名な、二見浦というところにあるため、夫婦岩の縄に文字を乗せたロゴにした。
+">
+<img src="img/oisesan.png" alt="calendar2018" /></a>
+</div>
+        <div class="box right">
+<a href="img/suenosato.png" data-fancybox="logo" data-caption="陶の郷：兵庫県篠山市今田町にある、丹波焼のミュージアム。各窯元のうつわが一堂に見られ、販売されている窯元横丁などがある。館内のあたたかな雰囲気をロゴに取り入れた。また、窯元横丁に各窯元のうつわが集まっていることと、人々が集う場であることを、1枚の器に文字をのせることで表現した。器の色は、桃山時代末期までの穴窯の時代につくられていた、自然釉の陶器の色にした。
+">
+<img src="img/suenosato.png" alt="calendar2018" /></a>
+</div>
+<!--1列に4個終わり-->    
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/parfage.png" data-fancybox="logo" data-caption="PARFAGE：ワコールのランジェリーブランド。コンセプトは、「愛される、香り。」で、上質感のある素材を使った、甘くエレガントなデザインのブランドである。コンセプトの「香り」は、「さりげない」「淡い」ものが良しとされることが多く、また、このブランドのランジェリーのデザインの可愛らしさも「さりげない」「淡い」ものであると考えた。「さりげない」「淡い」というイメージを表すために、細いゴシック体を使った。また、柔らかい印象にするために平体にした。
+">
+<img src="img/parfage.png" alt="calendar2018" /></a>
+</div>
+        <div class="box x2 right"> 
+<a href="img/mone.png" data-fancybox="logo" data-caption="モネの池：モネの「睡蓮」の池のようと言われる、岐阜県の観光地となっている池。のんびりとしたプチ旅行をしたい人をターゲットとし、ロゴを作成した。その場所が持つ、優しい雰囲気を表したいと考えた。
+">
+<img src="img/mone.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり-->    
+<!--1列に4個はじまり-->       
+ <div class="box">
+<a href="img/Spa-Laqua.png" data-fancybox="logo" data-caption="Spa LaQua：東京ドームに併設されたスパ施設。天然温泉や岩盤浴などがあり、疲れを癒すことができる。コンセプトは、「女性に優しい、女性に嬉しい」、「トータルでキレイをかなえる」。LaQuaは、「水」を意味する言葉であり、女性をターゲットとしていることから、水→人魚→貝と連想し、貝をモチーフにした。リラックスするための施設であるため、落ち着いた色でまとめた。
+">
+<img src="img/Spa-Laqua.png" alt="logo" /></a>
+</div>
+        <div class="box">
+<a href="img/crazy-banana.png" data-fancybox="logo" data-caption="Crazy banana English School&Cafe：調布市にある英会話スクール＆カフェ。外国人スタッフと英語で話せるカフェがあり、英語でのおかしづくりなども行っている。店名は、「英語を学ぶためには、恥ずかしいという皮を脱ぎさり時にはめちゃくちゃに話すことが重要である」という考えからつけられており、教室はアットホームな雰囲気であることから、「チャレンジ」と「アットホーム」をキーワードにロゴを作成した。
+">
+<img src="img/crazy-banana.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/R-material.png" data-fancybox="logo" data-caption="R MATERIAL PROJECT：普段は流通しないサンプルやデッドストックの生地やボタンなどから、価値あるものをセレクトして展示&販売し、クリエイティブに活かす活動。コンセプトである、3つのR(Refind、Recreation、Relation)を、大きなRと線で表した。尾州の繊維産業は歴史があることや、常設店ではデッドストックの生地などを販売していること、常設店がある建物が歴史ある建物であることを踏まえ、歴史を感じるようなのロゴにした。色は、常設店がある建物の外壁の色にした。
+">
+<img src="img/R-material.png" alt="calendar2018" /></a>
+</div>
+        <div class="box right">
+<a href="img/mishikusa.png" data-fancybox="logo" data-caption="ミチクサエンニチ：岐阜駅の近くの八幡神社で開催されている、野外マーケット。飲食店などが出店し、ゲームなどのイベントも行われている。近隣でも他の野外マーケットが行われているが、このマーケットの特徴として、神社で行われている点とその場所には木々が茂っており、緑豊かであるという点があると考えた。その2つの特徴を表したロゴにし、「エン」の文字を強調することで、縁が生まれる場であることも表現した。また、「家族連れで気軽に楽しめる場所を」という開催の動機を踏まえ、子どもも楽しめるマーケットであることが伝わるロゴにしたいと考えた。
+">
+<img src="img/mishikusa.png" alt="calendar2018" /></a>
+</div>
+<!--1列に4個終わり-->                                      
+<!--1列に4個はじまり-->       
+ <div class="box">
+<a href="img/SORASIA.png" data-fancybox="logo" data-caption="SORASIA：岐阜と東京(青山)にあるコワーキングスペース。アーティストの活躍の場を広げたいとの考えから、作品の展示スペースを設けているという特徴がある。「利用者に『空を見上げたときのような、幸せな気持ち』を感じてもらいたい」との想いがあることから、空を見上げた時に見えるものである飛行機雲をロゴに取り入れた。また、この場所が、アーティストの方にとって新たなステージへの出発点となる場所であってほしいと考え、飛行機に「出発」のイメージも重ねた。">
+<img src="img/SORASIA.png" alt="logo" /></a>
+</div>
+        <div class="box">
+<a href="img/onecoin.png" data-fancybox="logo" data-caption="ワンコインDAY&NIGHT：調布市で行われた、ワンコイン(500円)で、飲食や買い物ができるイベント。参加の店が、昼間は花屋や洋菓子屋など、夜は焼き鳥などの赤提灯があるような飲み屋が多かったため、DAYとNIGHTの部分にそれぞれのイメージに合ったフォントを選んだ。">
+<img src="img/onecoin.png" alt="calendar2018" /></a>
+</div>
+        <div class="box">
+<a href="img/nekoshoyu.png" data-fancybox="logo" data-caption="ねこしょうゆ小皿：醤油を注ぐと猫の形が浮かび上がる醤油皿。販売会社のエクリュさんが、「気負わない心地いいモノ」を届けたいと書いていたので、「心地よさ」「シンプル」をキーワードにロゴを作成した。「う」の点で醤油が落ちる様子を表した。
+">
+<img src="img/nekoshoyu.png" alt="calendar2018" /></a>
+</div>
+<!--1列に4個終わり-->    
+<!--1列に2個はじまり-->  
+        <div class="box x2">
+<a href="img/cloth-project.png" data-fancybox="logo" data-caption="CLOTH PROJECT：ファッション用ウール素材の織物やニットの生産が盛んな尾州産地と呼ばれる、愛知県一宮市を中心とする地域で行われている、製造の現場を実際に見学してもらうプロジェクト。文化学園大学の学生が見学し、出会った素材を使って卒業イベントの服をつくるなどの取り組みが行われている。ロゴでは、ウール(羊毛)の丸みのある感じを表したいと考えた。また、「CLOTH」は、布のクロスと、交流し合うというクロスの両方の意味が込められているため、線と線がクロスする点を黒で表し、クロスすることによって何かが生まれることを表現した。
+">
+<img src="img/cloth-project.png" alt="calendar2018" /></a>
+</div>
+<!--1列に2個終わり-->    
+        
+  </div>
+</div>
+<footer>
+  <div class="footer_inner">
+  <div id="footer_nav" class="cf">
+    <div class="left">
+      
+      <a href="../index.html#top_photo_area"><p>WORKS</p></a>
+      <ul class="cf">
+        <li><a href="#">LOGO</a></li>
+        <li><a href="../needlework_marble/needlework_marble.html">Needlework Marble</a></li>
+        <li><a href="../picnic_juice/picnic_juice.html">ぴくにっくじゅーす</a></li>
+        <li><a href="../graphic_works/graphic_works.html">GRAPHIC WORKS</a></li>
+        </ul>
+      
+      </div>
+    <div class="right">
+      <a href="../index.html#pdf">
+        <p>PDF</p>
+        </a>
+      <a href="../index.html#about"><p>ABOUT ME
+        </p></a>
+      <a href="../index.html#contact">
+        <p>CONTACT</p></a>
+      
+      </div>
+  </div>
+  <p class="copyright">ALL RIGHTS RESERVED YUMI KANAMARU &copy;2017</p>
+  </div>
+</footer></body>
+</html>
