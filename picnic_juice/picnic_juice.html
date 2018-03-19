@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 <head>
@@ -14,9 +13,7 @@
 <link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
-<script type="text/javascript" src="../js/drawer.js"></script>
 <script type="text/javascript" src="../js/jquery.meanmenu.js"></script>
-<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
 <script type="text/javascript" src="../js/jquery.fancybox.js"></script>
 <script type="text/javascript" src="../js/parallax.min.js"></script>
 <meta name="robots" content="noindex, nofollow">
@@ -39,25 +36,7 @@ $(document).ready(function() {
 	);
 });
 </script>
-    <script>
-    $(document).ready(function() {
-      $('.drawer').drawer();
-    });
-  </script>
-<script>
-$(function() {
- $('.page_title').on('inview', function(event, isInView) {
-    if (isInView) {
-    //表示領域に入った時
-      $(this).addClass('pulse');
-    } else {
-    //表示領域から出た時
-      $(this).removeClass('pulse');
-      $(this).css('opacity',0); //非表示にしておく
-    }
-  });
-});
-</script></head>
+</head>
 
 <body class="picnic">
 <div class="parallax-window" data-parallax="scroll" data-image-src="img/picnic_top.jpg"></div>
@@ -73,23 +52,23 @@ $(function() {
 </header>
 <div id="content" class="works_detail">
 <div class="works_intro">
-  <h1 class="page_title">ぴくにっくじゅーす</h1>
+  <h1 class="page_title la_ja">ぴくにっく<br class="none">じゅーす</h1>
 <p>架空のフルーツジュースの店をオープンさせるという設定で、店のプランニングとツール制作を行いました。
 </p></div>
 <div class="planning_area">
     <h1>PLANNING</h1>
+    <span class="title_line"></span>
 <!--1つの制作物はじまり-->
  <div class="works_desc">
-<!--画像始まり--> 
-  <div class="photo_area" style="background-image:url(img/positioning.jpg); padding-bottom: 80%;
-">  
-    </div>
- <!--画像終わり-->
   <div class="desc_area">
       <h1>ポジショニングマップ</h1>
     <div class="desc_text"><p>フルーツジュースを飲む動機は、「健康のため」と「楽しみのため」の2つであると考えました。自店は、「楽しみのため」にジュースを買いに行く店と設定しました。</p>
 </div>     
   </div>
+<!--画像始まり--> 
+  <div class="photo_area single">  
+    <img src="img/positioning.jpg" width="750" height="606" alt="ポジショニングマップ" style="max-width: 500px;"/> </div>
+ <!--画像終わり-->
   </div>
 <!--1つの制作物終わり-->
 <!--1つの制作物はじまり-->
@@ -150,6 +129,7 @@ $(function() {
  </div>
 <div class="works_area">
     <h1>WORKS</h1>
+    <span class="title_line"></span>
  <!--1つの制作物はじまり-->
   <div class="works_desc">
     <!--画像始まり--> 

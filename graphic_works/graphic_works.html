@@ -5,19 +5,20 @@
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GRAPHIC WORKS | YUMI KANAMARU</title>
+<link rel="stylesheet" href="https://use.typekit.net/msj2ila.css">
 <link href="../css/reset.css" rel="stylesheet" type="text/css">
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 <link href="../css/meanmenu.css" rel="stylesheet" type="text/css">
 <link href="../css/drawer.css" rel="stylesheet" type="text/css">
 <link href="../css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
-<script type="text/javascript" src="../js/drawer.js"></script>
 <script type="text/javascript" src="../js/jquery.meanmenu.js"></script>
 <script type="text/javascript" src="../js/jquery.fancybox.js"></script>
 <script type="text/javascript" src="../js/parallax.min.js"></script>
+<script type="text/javascript" src="../js/jquery.inview.js"></script>
 <meta name="robots" content="noindex, nofollow">
 <script>
 $(document).ready(function() {
@@ -41,18 +42,21 @@ $(document).ready(function() {
 	});
 });
 </script>
-    <script>
-    $(document).ready(function() {
-      $('.drawer').drawer();
-    });
-  </script>
-<script type="text/javascript" charset="utf-8">
-$(window).load(function() {
-$('.flexslider').flexslider({
-	 controlNav: 'thumbnails'
-	});
+<script>
+$(function() {
+ $('.desc_area,img').on('inview', function(event, isInView) {
+    if (isInView) {
+    //表示領域に入った時
+      $(this).addClass('fadeIn');
+    } else {
+    //表示領域から出た時
+      $(this).removeClass('fadeIn');
+      $(this).css('opacity',0); //非表示にしておく
+    }
+  });
 });
-</script></head>
+</script>
+</head>
 
 <body class="graphic">
 <div class="parallax-window" data-parallax="scroll" data-image-src="img/graphic_top.jpg"></div>
@@ -74,13 +78,13 @@ $('.flexslider').flexslider({
     <!--画像始まり--> 
     <div class="photo_area two_photo"> 
       <div class="photo_box">  <a href="img/logo.png" data-fancybox="graphic" data-caption="">
-        <img src="img/logo.png" width="1242" height="650" alt=""/></a> </div>
+        <img src="img/logo.png" width="1242" height="650" alt="" class="animated"/></a> </div>
       <div class="photo_box"> <a href="img/logo2.png" data-fancybox="graphic" data-caption="">
-        <img src="img/logo2.png" alt="LOGO"/>    </a>
+        <img src="img/logo2.png" alt="LOGO" class="animated"/>    </a>
         </div></div>
     <!--画像終わり-->
     
-    <div class="desc_area">
+    <div class="desc_area animated animation_detail">
       <h1>金丸由美ロゴ</h1>
       <div class="desc_text"><p>シンボルマークは、金丸の「丸」を取り入れた。「いいね!」「Good!」と言われるものをつくりたいという想いを込めた。リボンは、女性らしさと明るさのある人でありたいと思い、加えた。ロゴタイプでは、丁寧な仕事をする人でありたいという想いを表現した。
         </p>
@@ -93,10 +97,10 @@ $('.flexslider').flexslider({
   <div class="works_desc">
     <!--画像始まり--> 
     <div class="photo_area single" style="max-width: 600px;">  <a href="img/meishi.jpg" data-fancybox="graphic" data-caption="">
-      <img src="img/meishi.jpg" /></a></div>
+      <img src="img/meishi.jpg" class="animated animation_detail"/></a></div>
     <!--画像終わり-->
     
-    <div class="desc_area">
+    <div class="desc_area animated animation_detail">
       <h1>松田さま名刺</h1>
       <div class="desc_text"><p>美容師の松田さまにご依頼いただき、名刺を作成した。「クラフト紙で、縦長に。シンプルに。」というご要望をいただき、レイアウトやフォントを考えた。松田さまと美容室の雰囲気に合った、優しい雰囲気の名刺にした。</p>
         </div>      
@@ -107,19 +111,19 @@ $('.flexslider').flexslider({
   <!--1つの制作物はじまり-->
   <div class="works_desc">
     <!--画像始まり--> 
-    <div class="photo_area two_photo"> 
-      <div class="photo_box">  <a href="img/havaianas2.png" data-fancybox="graphic" data-caption="">
-        <img src="img/havaianas2.png" width="1242" height="650" alt=""/></a> </div>
-      <div class="photo_box"> <a href="img/havaianas3.png" data-fancybox="graphic" data-caption="">
-        <img src="img/havaianas3.png" alt="LOGO"/> </a>   
+    <div class="photo_area two_photo animated"> 
+      <div class="photo_box">  <a href="img/havaianas2.png" data-fancybox="graphic" data-caption="" >
+        <img src="img/havaianas2.png" width="1242" height="650" alt="" class="animated"/></a> </div>
+      <div class="photo_box"> <a href="img/havaianas3.png" data-fancybox="graphic" data-caption="" >
+        <img src="img/havaianas3.png" alt="LOGO" class="animated"/> </a>   
         </div>
-      <div class="photo_box">  <a href="img/havaianas1.jpg" data-fancybox="graphic" data-caption="">
-        <img src="img/havaianas1.jpg" width="1242" height="650" alt=""/></a> </div>
+      <div class="photo_box">  <a href="img/havaianas1.jpg" data-fancybox="graphic" data-caption="" >
+        <img src="img/havaianas1.jpg" width="1242" height="650" alt="" class="animated"/></a> </div>
       </div>
     <!--画像終わり-->
     
-    <div class="desc_area">
-      <h1><span>3つ折りリーフレット</span> havaianas</h1>
+    <div class="desc_area animated">
+        <h1><span class="la_en">3</span>つ折りリーフレット<span class="la_en">havaianas</span></h1>
       <div class="desc_text"><p>授業の課題で、havaianasというブランドのロゴとリーフレットを作成した。店頭に置く、2017年春夏の新商品の紹介リーフレットを考えた。メインターゲットを30代の主婦と想定した。水彩のテクスチャーで夏らしい雰囲気にし、デニムとのコーディネートを載せることで持ち帰ってもらえる確率を高めたいと考えた。</p>
         </div>      
       
@@ -130,11 +134,11 @@ $('.flexslider').flexslider({
   <div class="works_desc">
     <!--画像始まり--> 
     <div class="photo_area single"><a href="img/yuyanara.jpg" data-fancybox="graphic" data-caption="">  
-      <img src="img/yuyanara.jpg" width="1485" height="981" alt=""/></a> </div>
+      <img src="img/yuyanara.jpg" width="1485" height="981" alt="" class="animated"/></a> </div>
     <!--画像終わり-->
     
-    <div class="desc_area">
-      <h1>装丁「YUYA NARA FASHION STYLE BOOK」</h1>
+    <div class="desc_area animated">
+        <h1>装丁「<span class="la_en">YUYA NARA FASHION STYLE BOOK</span>」</h1>
       <!--   	<p>WEB DESIGN/CORDING</p>
 -->      <div class="desc_text"><p>「YUYA NARA FASHION STYLE BOOK」の装丁を考えた。（写真は転載）美容師の奈良裕也さんのファッションやプライベートを紹介した本である。男女ともに支持されている奈良さんだが、男性をメインターゲットとし、装丁を考えた。本の中で、「BLACKは自分を象徴するカラー」と書かれていたこともあり、表紙と背表紙をモノトーンにした。
         </p>
@@ -146,14 +150,14 @@ $('.flexslider').flexslider({
   <!--1つの制作物はじまり-->
   <div class="works_desc">
     <!--画像始まり--> 
-    <div class="photo_area two_photo"> 
+    <div class="photo_area two_photo animated"> 
       <div class="photo_box"> <a href="img/collage1.jpg" data-fancybox="graphic" data-caption="">   
-        <img src="img/collage1.jpg" width="750" height="530" alt="コラージュ"/></a> </div>
+        <img src="img/collage1.jpg" width="750" height="530" alt="コラージュ" class="animated"/></a> </div>
       <div class="photo_box"> <a href="img/collage2.jpg" data-fancybox="graphic" data-caption="">  
-        <img src="img/collage2.jpg" style="max-width:294px;margin: 0;" alt="コラージュ"/>  </a> 
+        <img src="img/collage2.jpg" style="max-width:294px;margin: 0;" alt="コラージュ" class="animated"/>  </a> 
         </div></div>
     <!--画像終わり-->
-    <div class="desc_area">
+    <div class="desc_area animated">
       <h1>コラージュ</h1>
       <div class="desc_text"><p>Photoshopで画像を合成し、コラージュを作成した。（写真は転載）左は、リオオリンピックで優勝したサッカーブラジル代表のネイマール選手の歩みと喜びを表現した。右は、夏を心待ちにする気持ちを花火と海、グラスを使って表現した。</p>
         </div>      
@@ -164,21 +168,21 @@ $('.flexslider').flexslider({
   <!--1つの制作物はじまり-->
   <div class="works_desc">
     <!--画像始まり--> 
-    <div class="photo_area two_photo"> 
+    <div class="photo_area two_photo animated"> 
       <div class="photo_box"><a href="img/ise.jpg" data-fancybox="graphic" data-caption="">  
-        <img src="img/ise.jpg" width="595" height="842" alt=""/></a></div>
+        <img src="img/ise.jpg" width="595" height="842" alt="" class="animated"/></a></div>
       <div class="photo_box"> <a href="img/ise2.jpg" data-fancybox="graphic" data-caption="">
-        <img src="img/ise2.jpg" alt=""/></a>  
+        <img src="img/ise2.jpg" alt="" class="animated"/></a>  
         </div>
       <div class="photo_box"> <a href="img/ise3.jpg" data-fancybox="graphic" data-caption=""> 
-        <img src="img/ise3.jpg" width="595" height="842" alt=""/></a></div>
+        <img src="img/ise3.jpg" width="595" height="842" alt="" class="animated"/></a></div>
       <div class="photo_box"><a href="img/ise4.jpg" data-fancybox="graphic" data-caption=""> 
-        <img src="img/ise4.jpg" alt=""/>  </a>
+        <img src="img/ise4.jpg" alt="" class="animated"/>  </a>
         </div>
       </div>
     <!--画像終わり-->
     
-    <div class="desc_area">
+    <div class="desc_area animated">
       <h1>雑誌誌面　伊勢神宮特集</h1>
       <div class="desc_text"><p>雑誌誌面の伊勢神宮の特集を考えた。（文章はダミー、転載）30代前半の女性をターゲットとし、友達と伊勢神宮に行きたくなるような誌面を目指した。</p>
         </div>      

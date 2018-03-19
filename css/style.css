@@ -152,15 +152,21 @@ footer .copyright {
 	color: #e94816;
 }
 main .top_title, .sec_title, .desc_area h1 {
-	font-size: 1.8em;
 	letter-spacing: 0.1em;
 	line-height: 1.2;
-}
-.sec_title, .la_en, main .top_title {
 	font-weight: 900;
 }
-main .top_title {
-	margin: 0.5em 0 0.1em;
+.top_title, .sec_title{
+    font-size: 2.2em;
+}
+.top_title.la_ja{
+    font-size: 1.8em;
+}
+.desc_area h1 {
+	font-size: 1.6em;
+}
+.top_title {
+margin: 0.5em 0 0;
 }
 #pdf, #about, #contact {
 	padding: 0 0 7em;
@@ -173,14 +179,20 @@ main .top_title {
 	margin: 0 10px;
 	padding: 4em 0 0;
 }
-.textEffect, .page_title {
+.page_title {
 	font-weight: 900;
-	font-size: 2.2em;
 	letter-spacing: 0.1em;
+	font-size: 4em;
+}
+.page_title.la_ja {
+    font-size: 3.2em;
 }
 .textEffect {
 width: 250px;
     margin: 0.5em auto;
+	font-weight: 900;
+	font-size: 2.2em;
+	letter-spacing: 0.1em;
 }
 .textEffect img{
     width: 100%;
@@ -265,7 +277,7 @@ p.name {
 .graphic .works_desc {
 	margin: 0 0 5em;
 }
-#ma_photo_area {
+.photo_area, #ma_photo_area {
 	display: flex;
 	flex-wrap: wrap;
 	flex: 1;
@@ -288,6 +300,16 @@ p.name {
 	margin: 0 0 2%;
 	width: 100%;
 }
+.two_photo .photo_box img {
+	width: 100%;
+	height: auto;
+}
+#content .works_desc .photo_area.single {
+	margin: 0 0 2%;
+}
+#content .planning_area .works_desc .photo_area.single {
+	margin: 2% 0 0 0;
+}
 .needlework {
 	background-color: #4DB2C0;
 }
@@ -302,9 +324,6 @@ p.name {
 }
 .picnic {
 	background-color: #D0111A;
-}
-.picnic .desc_area h1{
-	color: #D0111A;
 }
 .logo #top_main {
 	background-image: url(../logo/img/logo_top.jpg);
@@ -417,18 +436,18 @@ footer .copyright {
 	background-color: #E0C245;
 }
 .planning_area>h1, .works_area>h1 {
-	/*	background-color: #FFFFFF;
-*/	
-	padding: 0 0.5em;
-	font-size: 2em;
+	font-size: 2.8em;
 	display: block;
 	font-weight: 800;
-	display: block;
-	border-top: 3px solid #FFFDB7;
-	border-left: 3px solid #FFFDB7;
-	border-bottom: 3px solid #FFFDB7;
 	color: #FFFDB7;
 	letter-spacing: 0.1em;
+line-height: 1.1;
+}
+.title_line {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFDB7;
+	display: block;
 }
 .planning_area>h1 {
 /*    width: 230px;
@@ -469,23 +488,12 @@ footer .copyright {
 	width: 100%;
 	margin: 0 0 1%;
 }
-.desc_area {
-	color: #000000;
-	padding-right: 2em;
-	padding-left: 2em;
-	padding-bottom: 2em;
-	background-color: #FFFFFF;
-	padding-top: 2em;
+.desc_area h1 .la_en {
+	font-size: 1.5rem;
 }
-.works_desc {
-position: relative;
-}
-.works_desc .photo_area {
-width: 100%;
-    background-position: center center;
-    z-index: 1;
-    background-size: cover;
-    overflow: hidden;
+.animation_detail {
+  animation-duration: 5s;
+animation-delay:0.5s;
 }
 
 @media only screen and (min-width : 768px ) {
