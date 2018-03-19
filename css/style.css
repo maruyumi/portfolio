@@ -376,6 +376,7 @@ p.name {
 	padding: 0 0 0 0.5em;
 	margin: 0 0 1em;
 	letter-spacing: 0.1em;
+    line-height: 1.2;
 }
 #footer_nav ul li {
 	margin: 0 0 0.5em;
@@ -610,6 +611,9 @@ header h1 img {
 .textEffect {
 width: 400px;
 }
+    .desc_area .desc_text .plus_img img.shop{
+        width: 200px;
+    }
 }
 
 @media only screen and (min-width : 850px ) {
