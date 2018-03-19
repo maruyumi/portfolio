@@ -5,12 +5,12 @@
 <meta content="text/html; charset=UTF-8" http-equiv="content-type">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ぴくにっくじゅーす | YUMI KANAMARU</title>
+<link rel="stylesheet" href="https://use.typekit.net/msj2ila.css">
 <link href="../css/reset.css" rel="stylesheet" type="text/css">
 <link href="../css/style.css" rel="stylesheet" type="text/css">
 <link href="../css/meanmenu.css" rel="stylesheet" type="text/css">
 <link href="../css/drawer.css" rel="stylesheet" type="text/css">
 <link href="../css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
@@ -44,11 +44,18 @@ $(document).ready(function() {
       $('.drawer').drawer();
     });
   </script>
-<script type="text/javascript" charset="utf-8">
-$(window).load(function() {
-$('.flexslider').flexslider({
-	 controlNav: 'thumbnails'
-	});
+<script>
+$(function() {
+ $('.page_title').on('inview', function(event, isInView) {
+    if (isInView) {
+    //表示領域に入った時
+      $(this).addClass('pulse');
+    } else {
+    //表示領域から出た時
+      $(this).removeClass('pulse');
+      $(this).css('opacity',0); //非表示にしておく
+    }
+  });
 });
 </script></head>
 
@@ -73,15 +80,16 @@ $('.flexslider').flexslider({
     <h1>PLANNING</h1>
 <!--1つの制作物はじまり-->
  <div class="works_desc">
+<!--画像始まり--> 
+  <div class="photo_area" style="background-image:url(img/positioning.jpg); padding-bottom: 80%;
+">  
+    </div>
+ <!--画像終わり-->
   <div class="desc_area">
       <h1>ポジショニングマップ</h1>
     <div class="desc_text"><p>フルーツジュースを飲む動機は、「健康のため」と「楽しみのため」の2つであると考えました。自店は、「楽しみのため」にジュースを買いに行く店と設定しました。</p>
 </div>     
   </div>
-<!--画像始まり--> 
-  <div class="photo_area single">  
-    <img src="img/positioning.jpg" width="750" height="606" alt="ポジショニングマップ" style="max-width: 500px;"/> </div>
- <!--画像終わり-->
   </div>
 <!--1つの制作物終わり-->
 <!--1つの制作物はじまり-->
