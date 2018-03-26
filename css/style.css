@@ -153,7 +153,7 @@ footer .copyright {
 }
 main .top_title, .sec_title, .desc_area h1 {
 	letter-spacing: 0.1em;
-	line-height: 1.2;
+	line-height: 1;
 	font-weight: 900;
 }
 .top_title, .sec_title{
@@ -311,25 +311,22 @@ p.name {
 	margin: 2% 0 0 0;
 }
 .needlework {
-	background-color: #4DB2C0;
+	background-color: #1AD4E2;
 }
 .works_desc .desc_area .button_box.needle {
 	color: #4DB2C0;
-}
-.works_desc .desc_area .desc_text {
-	margin: 0.5em 0 0 0;
 }
 .picnic #top_main {
 	background-image: url(../picnic_juice/img/picnic_top.jpg);
 }
 .picnic {
-	background-color: #D0111A;
+	background-color: #E5173F;
 }
 .logo #top_main {
 	background-image: url(../logo/img/logo_top.jpg);
 }
 .logo {
-	background-color: #cc6718;
+	background-color: #E57417;
 }
 #ma_photo_area .box img {
 	width: auto;
@@ -421,7 +418,7 @@ footer .copyright {
 	min-height: 100vh;
 }
 .sec_title {
-	margin: 0 0 0.5em;
+	margin: 0 0 0.1em;
 }
 #contact .contact_desc {
 	text-align: center
@@ -434,7 +431,7 @@ footer .copyright {
 	margin: 0.5em auto;
 }
 .graphic {
-	background-color: #E0C245;
+	background-color: #E5C717;
 }
 .planning_area>h1, .works_area>h1 {
 	font-size: 2.8em;
@@ -496,6 +493,9 @@ line-height: 1.1;
   animation-duration: 5s;
 animation-delay:0.5s;
 }
+#footer_nav .left .la_ja {
+	font-size: 0.8rem;
+}
 
 @media only screen and (min-width : 768px ) {
 .works_desc>img {
@@ -527,7 +527,11 @@ footer .footer_inner {
 }
 .page_title {
 	font-size: 5em;
-}
+    line-height: 55px;
+    }
+.page_title.la_ja {
+	font-size: 4em;
+    }
 .top_page .textEffect span::before, .top_page .textEffect span::after {
 	width: 30px;
 }
@@ -666,5 +670,8 @@ main .top_photo4 img {
 	width: 60%;
 	margin: 5% 0 0 40%;
 	height: auto;
+}
+.none_wide {
+    display: none;
 }
 }
